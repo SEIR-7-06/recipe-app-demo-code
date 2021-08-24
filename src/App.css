@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a:visited {
+  color: inherit;
+}
+
+button {
+  padding: 6px 8px;
+  margin: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+/* SITEWIDE *********************************************** */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* HEADER ************************************************* */
+.header {
+  border: 2px solid #aaa;
+  padding: 0 30px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navList {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navLink {
+  display: block;
+  padding: 20px;
+}
+
+.navLink:hover {
+  color: orange;
+}
+
+.main-page {
+  display: flex;
+}
+
+/* SIDEBAR ************************************************* */
+.sidebar {
+  width: 240px;
+  min-width: 300px;
+  border: 2px solid #aaa;
+}
+
+.sidebar-card {
+  display: flex;
+  padding: 20px;
+  border-bottom: 2px solid #aaa;
+  cursor: pointer;
+}
+
+.sidebar-card:hover {
+  background: #efefef;
+}
+
+/* category INFO *********************************************** */
+.category-info {
+  border: 2px solid #aaa;
+  flex-grow: 1;
+}
+
+.category-detail {
+  border: 2px solid #aaa;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.category-content {
+  padding-right: 15px;
+}
+
+.category-img {
+  width: 525px;
+  max-width: 50%;
+
+}
+
+/* RECIPES SECTION ******************************************* */
+.recipes-section {
+  border: 2px solid #aaa;
+  cursor: pointer;
+}
+
+.add-recipe-button {
+  margin: 15px;
+  padding: 7px 10px;
+}
+
+.recipe {
+  border-top: 2px solid #aaa;
+  padding: 18px;
+}
+
+.recipe:hover {
+  background: #efefef;
+}
+
+/* RECIPE ADD PAGE ******************************************** */
+.form {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form-label {
+  width: 100px;
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 3px;
+  border: 2px solid #aaa;
+  padding: 5px;
+}
+
+.form-input-body {
+  height: 200px;
+}
+/* SHOW RECIPE PAGE **************************************** */
+.show-recipe-page {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.recipe-category-name,
+.recipe-title,
+.recipe-body {
+  margin-bottom: 10px;
 }
