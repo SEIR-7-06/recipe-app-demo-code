@@ -1,5 +1,5 @@
 function Sidebar(props) {
-  console.log('These are the sidebar props:', props)
+  // console.log('These are the sidebar props:', props)
   // 💪 Exercise - map() the props.categoryNames
   // to make an array of <li> tags
   // Then insert that into the JSX

@@ -16,7 +16,8 @@ Recipe App Props Lesson:
     only be mutatable in one place.
 
 * Where should our data live?
-    - 
+    - In the highest level component that is parent to all the 
+    sub-components that need that data
 
 * 💡 Props
     - Data only flows downward from parent to child

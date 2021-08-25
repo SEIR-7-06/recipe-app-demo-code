@@ -9,11 +9,12 @@ function MainPage() {
   // Task:
   // Convert a super complex array (categoryData)
   // into a much simpler array:
-  // categoryData
   let categoryNames = categoryData.map(category => {
     return category.categoryName
   })
-  console.log(categoryNames)
+  // console.log(categoryNames)
+  let selectedCategory = categoryData[0]
+  console.log(selectedCategory)
 
   return (
     <div className="main-page">
@@ -22,8 +23,8 @@ function MainPage() {
         <section className="category-detail">
           Category Details
         </section>
-        <CategoryDetail />
-        <RecipesList />
+        <CategoryDetail category={selectedCategory}/>
+        <RecipesList recipes={selectedCategory.recipes} />
       </main>
     </div>
   );
