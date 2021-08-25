@@ -1,0 +1,27 @@
+Recipe App Props Lesson:
+
+🗒️ Lesson Plan:
+    * Construct Component Hierarchy Tree Diagram
+    * Explore the concept of SPAs (Single Page Applications)
+    * Understand dynamic rendering
+    * Challenge our understanding of props
+
+* 💡 Single Page Application (SPA)
+    - In a SPA, the application dynamically re-renders portions
+    of the webpage w/ new content, rather than navigating to
+    new or different webpages.
+
+* Single Source of Truth Principle
+    - For an application, the data must reside in, and 
+    only be mutatable in one place.
+
+* Where should our data live?
+    - 
+
+* 💡 Props
+    - Data only flows downward from parent to child
+    (and sometimes upwards)
+
+* Dynamic rendering
+    - Components can be rendered using input data
+    and that data can be changed in the parent

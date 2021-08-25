@@ -1,10 +1,16 @@
-function Sidebar() {
+function Sidebar(props) {
+  console.log('These are the sidebar props:', props)
+  // 💪 Exercise - map() the props.categoryNames
+  // to make an array of <li> tags
+  // Then insert that into the JSX
+  let sidebarCardsJsx = props.categoryNames.map((name, idx) => {
+    return <li key={idx} className="sidebar-card">{ name }</li>
+  })
+
   return (
     <aside className="sidebar">
       <ul>
-        <li className="sidebar-card">Breakfast</li>
-        <li className="sidebar-card">Soups</li>
-        <li className="sidebar-card">Pasta Dishes</li>
+        { sidebarCardsJsx }
       </ul>
     </aside>
   );
