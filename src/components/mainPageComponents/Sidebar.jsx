@@ -1,10 +1,18 @@
 function Sidebar(props) {
-  // console.log('These are the sidebar props:', props)
-  // 💪 Exercise - map() the props.categoryNames
-  // to make an array of <li> tags
-  // Then insert that into the JSX
+  function handleCategoryClick(idx) {
+    props.updateCategoryIdx(idx);
+  }
+
   let sidebarCardsJsx = props.categoryNames.map((name, idx) => {
-    return <li key={idx} className="sidebar-card">{ name }</li>
+    return (
+      <li 
+        key={idx} 
+        className="sidebar-card" 
+        onClick={() => handleCategoryClick(idx)}
+      >
+        { name }
+      </li>
+    )
   })
 
   return (
